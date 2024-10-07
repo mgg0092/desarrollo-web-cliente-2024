@@ -19,10 +19,6 @@ por pantalla como quedan las mesas inicialmente.
 • El programa seguirá pidiendo comensales hasta que se introduzca un valor
 negativo. */
 
-function generarNumAle(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 function crearMesas(numMesas) {
   let mesas = [];
   for (let i = 0; i < numMesas; i++) {
