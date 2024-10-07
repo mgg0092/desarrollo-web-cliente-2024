@@ -55,7 +55,7 @@ function sentarClientes(mesas, nClientes) {
   return false;
 }
 
-function gestionarRestaurante() {
+function horaDeChambear() {
   const numMesas = parseInt(prompt("Introduce el numero de mesas: "));
   let mesas = crearMesas(numMesas);
   let salir;
