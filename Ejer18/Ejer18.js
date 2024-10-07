@@ -64,7 +64,7 @@ function gestionarRestaurante() {
   while (true) {
     const numClientes = parseInt(
       prompt(
-        "¿Cuántos comensales son? (Introduce un número negativo para salir):"
+        "¿Cuántas personas son? (Introduce un número negativo para salir):"
       )
     );
 
