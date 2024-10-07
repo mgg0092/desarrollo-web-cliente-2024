@@ -58,6 +58,7 @@ function sentarClientes(mesas, nClientes) {
 function gestionarRestaurante() {
   const numMesas = parseInt(prompt("Introduce el numero de mesas: "));
   let mesas = crearMesas(numMesas);
+  let salir;
 
   mostrarMesas(mesas);
 
@@ -69,8 +70,7 @@ function gestionarRestaurante() {
     );
 
     if (numClientes < 0) {
-      console.log("Gracias por usar el sistema. ¡Hasta pronto!");
-      break;
+      salir = false;
     }
 
     if (numClientes > 4) {
