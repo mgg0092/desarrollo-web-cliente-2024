@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejer15</title>
+  </head>
+  <body>
+    <!-- Usando el array de colores del ejercicio anterior, crea un script que
+    solicite 8 palabras al usuario y las almacene en otro array.
+    Ordena ese array (el del usuario) de forma que si aparecen colores del array de colores,
+    estos queden al principio del array y el resto de palabras al final. Muestralo por consola. -->
+
+    <script>
+      function E15() {
+        let valores = [];
+        let colores = ["grey", "red", "blue", "green", "yellow", "black"];
+        for (let i = 0; i <= 8; i++) {
+          valores[i] = prompt("Introduce los valores del Array: ");
+        }
+        let Ordena = [...colores, ...valores];
+        console.log(Ordena);
+      }
+
+      E15();
+    </script>
+  </body>
+</html>
