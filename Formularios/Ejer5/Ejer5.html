@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer5</title>
+    <script>
+        window.onload = () => {
+            let bComprobar = document.getElementsByTagName("input")[2];
+
+            bComprobar.onclick = () => {
+                let msg = "";
+                let frase1 = document.getElementsByTagName("input")[0];
+                let frase2 = document.getElementsByTagName("input")[1];
+
+                let Frase1Split = frase1.value.split("");
+                let Frase2Split = frase2.value.split("");
+
+                Frase1Split.sort();
+                Frase2Split.sort();
+
+                for (let i = 0; i < Frase1Split.length; i++) {
+                    if(Frase1Split[i] == Frase2Split[i]) {
+                        msg = "Las palabras son anagrama";
+                    } else if (Frase1Split[i] != Frase2Split[i] || 
+                    Frase1Split[i] == "" || Frase2Split[i] == "") {
+                        msg = "Las palabras son anagrama";
+                    }
+                }
+
+                alert(msg);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="button" value="Comprobar">
+</body>
+</html>
